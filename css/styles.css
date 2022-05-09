@@ -29,7 +29,7 @@ p {
 img {
   display: block;
   max-width: 100%;
-  max-height: auto;
+  height: auto;
 }
 
 .container {
@@ -53,7 +53,7 @@ img {
   text-decoration: none;
 }
 
-.contacts {
+.footer-contacts {
   font-style: normal;
 }
 
@@ -88,7 +88,7 @@ img {
 .header {
   padding-top: 25px;
   padding-bottom: 25px;
-  border-bottom: 1px var(--description-font-color);
+  border-bottom: 1px solid #ececec;
   /*outline: 1px solid tomato;*/
 }
 
@@ -164,7 +164,7 @@ img {
 /* ----- HERO ----- */
 
 .hero {
-  padding: 200px;
+  padding: 200px 0px;
   background-color: var(--background-color-secondary);
 }
 
@@ -218,18 +218,18 @@ img {
 */
 
 .advantages-item {
-  margin-right: 15px;
-  margin-left: 15px;
+  margin-right: 30px;
 }
 
 .advantages-item:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
 
 .advantages-title {
   margin-bottom: 10px;
 
   color: var(--primary-font-color);
+  font-size: inherit;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -282,6 +282,10 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
+.team-item:last-child {
+  margin-right: 0;
+}
+
 .team-member-name {
   margin-bottom: 10px;
 
@@ -303,12 +307,10 @@ img {
 /* ----- FOOTER ----- */
 
 .footer {
-  background-color: var(--background-color-secondary);
-}
-
-.footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  background-color: var(--background-color-secondary);
 }
 
 .logo-footer {
@@ -324,19 +326,23 @@ img {
 .logo-footer span {
   color: var(--accent-color);
 }
-.contact-address,
-.contact-email,
-.contact-tel {
-  display: inline-block;
+
+.fcontact-item {
   margin-bottom: 9px;
+}
+
+.fcontact-address,
+.fcontact-email,
+.fcontact-tel {
+  display: inline-block;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
 }
-.contact-email,
-.contact-tel {
+.fcontact-email,
+.fcontact-tel {
   color: var(--description-font-color);
 }
 
